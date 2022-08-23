@@ -4,11 +4,11 @@ import Social from "./Social";
 
 Modal.setAppElement("#root");
 
-const News = () => {
+const Projects = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(false);
-  const [isOpen4, setIsOpen4] = useState(false);
+  // const [isOpen4, setIsOpen4] = useState(false);
 
   function toggleModalOne() {
     setIsOpen(!isOpen);
@@ -19,9 +19,9 @@ const News = () => {
   function toggleModalThree() {
     setIsOpen3(!isOpen3);
   }
-  function toggleModalFour() {
-    setIsOpen4(!isOpen4);
-  }
+  // function toggleModalFour() {
+  //   setIsOpen4(!isOpen4);
+  // }
 
   return (
     <>
@@ -35,6 +35,7 @@ const News = () => {
         </div>
 
         <ul>
+          {/* YOUBETCHA */}
           <li data-aos="fade-right" data-aos-duration="1200">
             <div className="list_inner">
               <div className="image" onClick={toggleModalOne}>
@@ -42,23 +43,20 @@ const News = () => {
                 <div
                   className="main"
                   style={{
-                    backgroundImage: "url(assets/img/news/1.jpg)",
+                    backgroundImage:
+                      "url(assets/img/news/huddleScreenshot.png)",
                   }}
                 ></div>
               </div>
               {/* END IMAGE */}
               <div className="details">
                 <div className="extra">
-                  <p className="date">
-                    By <a href="#">Alex Watson</a>
-                    <span>05 April 2021</span>
-                  </p>
+                  <h3 className="title" onClick={toggleModalOne}>
+                    Huddle
+                  </h3>
                 </div>
                 {/* END EXTRA */}
-
-                <h3 className="title" onClick={toggleModalOne}>
-                  Format releases a new tool that enables direct video hosting
-                </h3>
+                <p className="date">Wordle-inspired NFL player guessing game</p>
                 <div className="tokyo_tm_read_more">
                   <a onClick={toggleModalOne}>
                     <span>Read More</span>
@@ -89,7 +87,8 @@ const News = () => {
                         <div
                           className="main"
                           style={{
-                            backgroundImage: "url(assets/img/news/1.jpg)",
+                            backgroundImage:
+                              "url(assets/img/news/huddleScreenshot.png)",
                           }}
                         ></div>
                       </div>
@@ -187,7 +186,7 @@ const News = () => {
             </div>
           </li>
           {/* END SINGLE BLOG */}
-
+          {/* HUDDLE */}
           <li
             data-aos="fade-right"
             data-aos-duration="1200"
@@ -342,7 +341,7 @@ const News = () => {
             {/* END LIST INNER */}
           </li>
           {/* END SINGLE BLOG */}
-
+          {/* CHECKERS */}
           <li
             data-aos="fade-right"
             data-aos-duration="1200"
@@ -490,9 +489,10 @@ const News = () => {
             </div>
             {/* END LIST INNER */}
           </li>
-          {/* END SINGLE BLOG */}
 
-          <li
+          {/* POTENTIAL FOURTH PROJECT, COULD ADD COMING SOON THING FOR PRODUCKTIVE  */}
+
+          {/* <li
             data-aos="fade-right"
             data-aos-duration="1200"
             data-aos-delay="400"
@@ -507,7 +507,6 @@ const News = () => {
                   }}
                 ></div>
               </div>
-              {/* END IMAGE */}
 
               <div className="details">
                 <div className="extra">
@@ -516,7 +515,6 @@ const News = () => {
                     <span>22 Jan 2021</span>
                   </p>
                 </div>
-                {/* END EXTRA */}
 
                 <h3 className="title" onClick={toggleModalFour}>
                   Stay creative in lockdown with these fun photo projects
@@ -527,7 +525,6 @@ const News = () => {
                   </a>
                 </div>
               </div>
-              {/* END DETAILS */}
               <Modal
                 isOpen={isOpen4}
                 onRequestClose={toggleModalFour}
@@ -540,7 +537,6 @@ const News = () => {
                   <button className="close-modal" onClick={toggleModalFour}>
                     <img src="assets/img/svg/cancel.svg" alt="close icon" />
                   </button>
-                  {/* END CLOSE ICON */}
                   <div className="box_inner">
                     <div className="description_wrap scrollable">
                       <div className="image">
@@ -552,7 +548,6 @@ const News = () => {
                           }}
                         ></div>
                       </div>
-                      {/* END IMAGE */}
 
                       <div className="details">
                         <div className="extra">
@@ -566,7 +561,6 @@ const News = () => {
                           projects
                         </h3>
                       </div>
-                      {/* END DETAILS */}
 
                       <div className="main_content ">
                         <div className="descriptions">
@@ -612,7 +606,6 @@ const News = () => {
                               artistic heights.
                             </p>
                           </div>
-                          {/* END QUOTEBOX */}
                           <p>
                             Pretend everything is new and that you haven’t seen
                             it before, and then you will be free to notice the
@@ -633,22 +626,18 @@ const News = () => {
                         <div className="news_share">
                           <span>Share:</span>
                           <Social />
-                          {/* END SOCIAL SHARE */}
                         </div>
                       </div>
-                      {/* END MAIN CONTENT */}
                     </div>
                   </div>
                 </div>
               </Modal>
-              {/* END MODAL */}
             </div>
-            {/* END LIST INNER */}
-          </li>
+          </li> */}
         </ul>
       </div>
     </>
   );
 };
 
-export default News;
+export default Projects;

@@ -33,9 +33,10 @@ const About = () => {
             <div className="left">
               <p>
                 Hey, I'm Ryan. I'm a software developer trained in full stack
-                engineering. I have a passion for problem solving and working
-                with others. In my spare time I like to play and write music, go
-                skiing, and play video games.
+                engineering. I have a degree in biochemistry from UW Madison,
+                and I'm pivoting to tech to pursue my passion for
+                problem-solving. In my spare time I like to play and write
+                music, go skiing, and play video games.
               </p>
               <div className="tokyo_tm_button">
                 <button onClick={toggleModal} className="ib-button">

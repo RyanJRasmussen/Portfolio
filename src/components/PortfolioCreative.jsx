@@ -6,6 +6,7 @@ import ReactTooltip from "react-tooltip";
 import ModalVideo from "react-modal-video";
 import Modal from "react-modal";
 import Social from "./Social";
+import Skills from "./SkillIcons";
 
 const Portfolio = () => {
   // for popup video
@@ -35,7 +36,8 @@ const Portfolio = () => {
             </div>
           </div>
           {/* END TOKYO_TM_TITLE */}
-
+          {/* <Skills /> */}
+          {/* Testing skill icons and styles here... */}
           <div className="portfolio_filter">
             <Tabs>
               <TabList>

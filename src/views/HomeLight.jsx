@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { FaMoon, FaSun } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import Home from "../components/Home";
 import About from "../components/About";
-import Portfolio from "../components/PortfolioCreative";
-import News from "../components/News";
+import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import Skills from "../components/Skills";
 
 const HomeLight = () => {
   const [isDark, setIsDark] = useState(false);
@@ -71,10 +70,10 @@ const HomeLight = () => {
                   <Tab>
                     <img
                       className="svg"
-                      src="/assets/img/svg/briefcase.svg"
-                      alt="briefcase"
+                      src="/assets/img/svg/skills.svg"
+                      alt="puzzle-piece"
                     />
-                    <span className="menu_content">Portfolio</span>
+                    <span className="menu_content">Skills</span>
                   </Tab>
                   <Tab>
                     <img
@@ -82,7 +81,7 @@ const HomeLight = () => {
                       src="/assets/img/svg/paper.svg"
                       alt="paper"
                     />
-                    <span className="menu_content">News</span>
+                    <span className="menu_content">Projects</span>
                   </Tab>
                   <Tab>
                     <img
@@ -125,14 +124,14 @@ const HomeLight = () => {
                 {/* END ABOUT MENU TAB CONTENT */}
 
                 <TabPanel>
-                  <Portfolio />
+                  <Skills />
                 </TabPanel>
                 {/* END PORTFOLIO MENU TAB CONTENT */}
 
                 <TabPanel>
-                  <News />
+                  <Projects />
                 </TabPanel>
-                {/* END NEWS MENU TAB CONTENT */}
+                {/* END PROJECTS MENU TAB CONTENT */}
 
                 <TabPanel>
                   <div
