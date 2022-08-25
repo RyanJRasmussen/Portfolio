@@ -19,8 +19,8 @@ const Home = () => {
           <div className="details">
             <h3 className="name">Ryan Rasmussen</h3>
             <p className="job">
-              Software developer based in Denver, Colorado. Searching for a full
-              time position.
+              Software developer based in Colorado. Searching for a full time
+              position.
             </p>
             {/* END JOB */}
             <Social />

@@ -1,14 +1,14 @@
 import React from "react";
 import { useState } from "react";
-import ReactMapGL from "react-map-gl";
+// import ReactMapGL from "react-map-gl";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
-  const [viewport, setViewport] = useState({
-    latitude: 40.712776,
-    longitude: -74.005974,
-    zoom: 8,
-  });
+  // const [viewport, setViewport] = useState({
+  //   latitude: 40.712776,
+  //   longitude: -74.005974,
+  //   zoom: 8,
+  // });
 
   function sendEmail(e) {
     e.preventDefault();
@@ -43,7 +43,7 @@ const Contact = () => {
         </div>
         {/* END TITLE */}
 
-        <div className="map_wrap">
+        {/* <div className="map_wrap">
           <div className="map">
             <ReactMapGL
               mapStyle={"mapbox://style/mapbox/dark-v9"}
@@ -52,7 +52,7 @@ const Contact = () => {
               onViewportChange={(nextViewport) => setViewport(nextViewport)}
             />
           </div>
-        </div>
+        </div> */}
         {/* MENU WRAP */}
 
         <div className="fields">

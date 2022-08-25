@@ -44,7 +44,7 @@ const Projects = () => {
                   className="main"
                   style={{
                     backgroundImage:
-                      "url(assets/img/news/huddleScreenshot.png)",
+                      "url(assets/img/news/youbetchaScreenshot.png)",
                   }}
                 ></div>
               </div>
@@ -52,11 +52,11 @@ const Projects = () => {
               <div className="details">
                 <div className="extra">
                   <h3 className="title" onClick={toggleModalOne}>
-                    Huddle
+                    YouBetcha
                   </h3>
                 </div>
                 {/* END EXTRA */}
-                <p className="date">Wordle-inspired NFL player guessing game</p>
+                <p className="date">Simulated sports betting application</p>
                 <div className="tokyo_tm_read_more">
                   <a onClick={toggleModalOne}>
                     <span>Read More</span>
@@ -88,7 +88,7 @@ const Projects = () => {
                           className="main"
                           style={{
                             backgroundImage:
-                              "url(assets/img/news/huddleScreenshot.png)",
+                              "url(assets/img/news/youbetchaScreenshot.png)",
                           }}
                         ></div>
                       </div>
@@ -185,7 +185,6 @@ const Projects = () => {
               {/* END MODAL */}
             </div>
           </li>
-          {/* END SINGLE BLOG */}
           {/* HUDDLE */}
           <li
             data-aos="fade-right"
@@ -198,7 +197,8 @@ const Projects = () => {
                 <div
                   className="main"
                   style={{
-                    backgroundImage: "url(assets/img/news/2.jpg)",
+                    backgroundImage:
+                      "url(assets/img/news/huddleScreenshot.png)",
                   }}
                 ></div>
               </div>
@@ -206,18 +206,16 @@ const Projects = () => {
 
               <div className="details">
                 <div className="extra">
-                  <p className="date">
-                    By <a href="#">Brook Kennedy</a>
-                    <span>22 March 2021</span>
-                  </p>
+                  <h3 className="title" onClick={toggleModalOne}>
+                    Huddle
+                  </h3>
                 </div>
                 {/* END EXTRA */}
-
-                <h3 className="title" onClick={toggleModalTwo}>
-                  Sony announced two new full frame cameras with zero fanfare
-                </h3>
+                <p className="date">
+                  NFL player guessing game inspired by Wordle
+                </p>
                 <div className="tokyo_tm_read_more">
-                  <a onClick={toggleModalTwo}>
+                  <a onClick={toggleModalOne}>
                     <span>Read More</span>
                   </a>
                 </div>
@@ -244,7 +242,8 @@ const Projects = () => {
                         <div
                           className="main"
                           style={{
-                            backgroundImage: "url(assets/img/news/2.jpg)",
+                            backgroundImage:
+                              "url(assets/img/news/huddleScreenshot.png)",
                           }}
                         ></div>
                       </div>
@@ -353,7 +352,8 @@ const Projects = () => {
                 <div
                   className="main"
                   style={{
-                    backgroundImage: "url(assets/img/news/3.jpg)",
+                    backgroundImage:
+                      "url(assets/img/news/checkersScreenshot.png)",
                   }}
                 ></div>
               </div>
@@ -361,20 +361,18 @@ const Projects = () => {
 
               <div className="details">
                 <div className="extra">
-                  <p className="date">
-                    By <a href="#">Paola Atkins</a>
-                    <span>15 Feb 2021</span>
-                  </p>
+                  <h3 className="title" onClick={toggleModalOne}>
+                    Checkers
+                  </h3>
                 </div>
-
-                <h3 className="title" onClick={toggleModalThree}>
-                  Why every photographer should shoot film, even in 2021
-                </h3>
+                {/* END EXTRA */}
+                <p className="date">The classic two player game</p>
                 <div className="tokyo_tm_read_more">
-                  <a onClick={toggleModalThree}>
+                  <a onClick={toggleModalOne}>
                     <span>Read More</span>
                   </a>
                 </div>
+                {/* END READ MORE BUTTON */}
               </div>
               {/* END DETAILS */}
 
@@ -398,7 +396,8 @@ const Projects = () => {
                         <div
                           className="main"
                           style={{
-                            backgroundImage: "url(assets/img/news/3.jpg)",
+                            backgroundImage:
+                              "url(assets/img/news/checkersScreenshot.png)",
                           }}
                         ></div>
                       </div>

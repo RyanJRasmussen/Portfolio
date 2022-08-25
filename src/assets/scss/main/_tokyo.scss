@@ -1,7 +1,4 @@
 /*
-/*	Copyright (c) 2021 ib-themes
-/*	Author: ib-themes
-/*	This file is made for CURRENT TEMPLATE
 
 01)	TOKYO BASE
 02) TOKYO LEFTPART
@@ -42,6 +39,18 @@ svg {
   width: 15px;
   height: 15px;
 }
+
+#skillIcon {
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+#homeIcon {
+  width: 25px;
+  height: 25px;
+}
+
 img.svg {
   width: 15px;
   height: 15px;
@@ -550,7 +559,7 @@ h6 {
   justify-content: space-between;
 }
 .tokyo_tm_about .description .left {
-  width: 55%;
+  width: 80%;
   padding-right: 50px;
 }
 .tokyo_tm_about .description .left p {

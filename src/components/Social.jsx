@@ -7,7 +7,8 @@ const SocialShare = [
     iconName: "github",
     link: "https://github.com/RyanJRasmussen",
   },
-  { iconName: "mail", link: "https://ryan.james.rasmussen@gmail.com/" },
+  // { iconName: "mail", link: "https://ryan.james.rasmussen@gmail.com/" },
+  //need to figure out "mailTo" later
   {
     iconName: "resume",
     link: Resume,
@@ -22,14 +23,14 @@ const Social = () => {
             <a href={`${val.link}`} target="_blank" rel="noreferrer">
               <img
                 className="svg"
+                id="homeIcon"
                 src={`/assets/img/svg/social/${val.iconName}.svg`}
-                alt="social"
+                alt={val.iconName}
               ></img>
             </a>
           </li>
         ))}
       </ul>
-      {/* END SOCIAL */}
     </>
   );
 };

@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Brand from "./Brand";
 import HeadshotWide from "../assets/HeadshotWide.jpg";
 
 Modal.setAppElement("#root");
 
 const About = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  function toggleModal() {
-    setIsOpen(!isOpen);
-  }
+  // function toggleModal() {
+  //   setIsOpen(!isOpen);
+  // }
 
   return (
     <>
@@ -24,8 +23,7 @@ const About = () => {
         </div>
         <div className="about_image">
           <img src={HeadshotWide} alt="Me" />
-        </div>
-
+        </div>{" "}
         {/* END ABOUT IMAGE */}
         <div className="description">
           <h3 className="name">Ryan Rasmussen - Software developer</h3>
@@ -33,64 +31,32 @@ const About = () => {
             <div className="left">
               <p>
                 Hey, I'm Ryan. I'm a software developer trained in full stack
-                engineering. I have a degree in biochemistry from UW Madison,
-                and I'm pivoting to tech to pursue my passion for
-                problem-solving. In my spare time I like to play and write
-                music, go skiing, and play video games.
+                engineering. I have a B.S. in biochemistry from the University
+                of Wisconsin, Madison. I'm currently working towards a pivot
+                from the biological sciences to software engineering to pursue
+                my love of problem-solving.
+                <br />
+                <br />
+                When I'm not coding, I like to play and write music on the
+                piano, violin, and guitar. I also love downhill skiing, running,
+                and playing video games with my friends.
               </p>
-              <div className="tokyo_tm_button">
+              {/* <div className="tokyo_tm_button">
                 <button onClick={toggleModal} className="ib-button">
                   My Skills
                 </button>
-              </div>
+              </div> */}
               {/* END TOKYO BUTTON */}
             </div>
             {/* END LEFT */}
-            <div className="right">
-              <ul>
-                <li>
-                  <p>
-                    <span>Languages and Tools</span>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>Styling:</span> CSS, SCSS, Bootstrap, React,
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>Address:</span>Ave 11, New York, USA
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    <span>Phone:</span>
-                    <a href="tel:+770221770505">+77 022 177 05 05</a>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>Study:</span>Univercity of Texas
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>Freelance:</span>Available
-                  </p>
-                </li>
-              </ul>
-              {/* END UL */}
-            </div>
-            {/* END RIGHT */}
           </div>
           {/* END DESCRIPTION INNER */}
         </div>
       </div>
 
       {/* START ABOUT POPUP BOX */}
-      <Modal
+      {/* Modal if I need it */}
+      {/* <Modal
         isOpen={isOpen}
         onRequestClose={toggleModal}
         contentLabel="My dialog"
@@ -102,7 +68,6 @@ const About = () => {
           <button className="close-modal" onClick={toggleModal}>
             <img src="assets/img/svg/cancel.svg" alt="close icon" />
           </button>
-          {/* END POPUP CLOSE BUTTON */}
           <div className="box-inner">
             <div
               className="description_wrap scrollable"
@@ -114,7 +79,6 @@ const About = () => {
                   <div className="about_title">
                     <h3>Photography Skills</h3>
                   </div>
-                  {/* END ABOUT TITLE */}
 
                   <div className="tokyo_progress">
                     <div className="progress_inner" data-value="95">
@@ -162,15 +126,12 @@ const About = () => {
                       </div>
                     </div>
                   </div>
-                  {/* END PROGRESS */}
                 </div>
-                {/* END LEFT */}
 
                 <div className="right">
                   <div className="about_title">
                     <h3>Language Skills</h3>
                   </div>
-                  {/* END TITLE */}
                   <div className="tokyo_progress">
                     <div className="progress_inner" data-value="95">
                       <span>
@@ -217,11 +178,8 @@ const About = () => {
                       </div>
                     </div>
                   </div>
-                  {/* EDN TOKYO PROGRESS */}
                 </div>
-                {/* END RIGHT */}
               </div>
-              {/* END MYBOX */}
 
               <div className="counter">
                 <div className="about_title">
@@ -247,22 +205,17 @@ const About = () => {
                     </div>
                   </li>
                 </ul>
-                {/* END COUNTER CONTENT */}
               </div>
-              {/* END COUNTER */}
 
               <div className="partners">
                 <div className="about_title">
                   <h3>Our Partners</h3>
                 </div>
-                <Brand />
               </div>
-              {/* END PARTNER SLIDER */}
             </div>
           </div>
         </div>
-      </Modal>
-      {/* END ABOUT POPUP BOX */}
+      </Modal> */}
     </>
   );
 };
