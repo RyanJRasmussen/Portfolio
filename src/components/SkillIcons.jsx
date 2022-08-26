@@ -1,9 +1,17 @@
 import React from "react";
 
 const SkillShare = [
+  { iconName: "html" },
+  { iconName: "css" },
   { iconName: "javascript" },
   { iconName: "npm" },
+  { iconName: "python" },
   { iconName: "react" },
+  { iconName: "redux" },
+  { iconName: "postgres" },
+  { iconName: "github" },
+  { iconName: "git" },
+  { iconName: "heroku" },
 ];
 
 const SkillIcons = () => {
