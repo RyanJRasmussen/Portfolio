@@ -124,7 +124,9 @@ const HomeLight = () => {
                 {/* END ABOUT MENU TAB CONTENT */}
 
                 <TabPanel>
-                  <Skills />
+                  <div data-aos="fade-right" data-aos-duration="1200">
+                    <Skills />
+                  </div>
                 </TabPanel>
                 {/* END PORTFOLIO MENU TAB CONTENT */}
 

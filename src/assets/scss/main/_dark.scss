@@ -111,6 +111,22 @@ body.dark .tokyo_tm_all_wrap .rightpart_in {
 body.dark .tokyo_tm_home .social li .svg {
   color: #fff;
 }
+// Experimenting with tm_about //
+
+body.dark .tokyo_tm_about .social li .svg {
+  color: #fff;
+}
+
+body.dark .tokyo_tm_about .social li a {
+  filter: invert(1);
+
+  &:hover {
+    filter: invert(0.8);
+  }
+}
+
+// Experimenting with tm_about //
+
 body.dark .tokyo_tm_home .social li a {
   filter: invert(1);
   &:hover {

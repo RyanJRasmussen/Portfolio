@@ -46,7 +46,7 @@ const About = () => {
                   My Skills
                 </button>
               </div> */}
-              {/* END TOKYO BUTTON */}
+              {/* END LOGO BUTTON */}
             </div>
             {/* END LEFT */}
           </div>
@@ -55,7 +55,6 @@ const About = () => {
       </div>
 
       {/* START ABOUT POPUP BOX */}
-      {/* Modal if I need it */}
       {/* <Modal
         isOpen={isOpen}
         onRequestClose={toggleModal}
