@@ -11,13 +11,13 @@ const Skills = () => {
         </div>
         <SkillIcons />
         <br />
-        <h5>
+        <p>
           <span id="skillsSubtitle">Languages and tools: </span> HTML, CSS,
-          SASS, Javascript/Node.js, TypeScript, Python
+          Javascript/Node.js, TypeScript, Python
           <br />
           <br />
           <span id="skillsSubtitle">Frameworks: </span>
-          React.js, Redux, Express.js, Flask
+          React.js, Express.js, Flask
           <br />
           <br />
           <span id="skillsSubtitle">Database: </span>
@@ -26,7 +26,7 @@ const Skills = () => {
           <br />
           <span id="skillsSubtitle">Other tools: </span> Git, GitHub, Heroku,
           REST APIs, Jest, VSCode, Jupyter Notebooks, Agile
-        </h5>
+        </p>
       </div>
     </>
   );

@@ -82,7 +82,8 @@ const Projects = () => {
                   {/* END CLOSE ICON */}
                   <div className="box_inner">
                     <div className="description_wrap scrollable">
-                      <div className="image">
+                      <h3 className="title">YouBetcha </h3>
+                      {/* <div className="image">
                         <img src="assets/img/thumbs/4-3.jpg" alt="tumb" />
                         <div
                           className="main"
@@ -91,31 +92,39 @@ const Projects = () => {
                               "url(assets/img/news/youbetchaScreenshot.png)",
                           }}
                         ></div>
-                      </div>
+                      </div> */}
                       {/* END IMAGE */}
                       <div className="details">
-                        <div className="extra">
+                        {/* <div className="extra">
                           <p className="date">
                             By <a href="#">Alex Watson</a>
                             <span>05 April 2021</span>
                           </p>
-                        </div>
+                        </div> */}
                         <h3 className="title">
-                          Format releases a new tool that enables direct video
-                          hosting
+                          Live updating simulated sports betting application
                         </h3>
                       </div>
                       {/* END DETAILS */}
                       <div className="main_content ">
                         <div className="descriptions">
+                          <h5>Summary</h5>
                           <p className="bigger">
-                            Just because we can't get out and about like we
-                            normally would, doesn’t mean we have to stop taking
-                            pictures. There’s still plenty you can do, provided
-                            you're prepared to use some imagination. Here are a
-                            few ideas to keep you shooting until normal life
-                            resumes.
+                            <br />
+                            YouBetcha is a full stack sports betting web
+                            application that allows users to make accounts and
+                            place bets on real MLB games. Users are able to log
+                            in at any time to bet fake money on games being
+                            played tomorrow or later today, and automatically
+                            receive the correct payout if their bet is
+                            successful.
                           </p>
+                          <br />
+                          <br />
+                          Technologies used: Authentication = Auth0 Front end:
+                          React.js PostgreSQL, Express.js, React.js, Node.js,
+                          Node Postgres ORM, The Odds API, Heroku, Heroku
+                          Scheduler, Material UI, GitHub/Git, Auth0, Trello
                           <p>
                             Most photographers love to shoot the unusual, and
                             you don’t get much more unusual than These
