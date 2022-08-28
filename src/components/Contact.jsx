@@ -1,27 +1,19 @@
 import React from "react";
-import { useState } from "react";
-// import ReactMapGL from "react-map-gl";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
-  // const [viewport, setViewport] = useState({
-  //   latitude: 40.712776,
-  //   longitude: -74.005974,
-  //   zoom: 8,
-  // });
-
   function sendEmail(e) {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_n4mkhz9",
-        "template_ugoztxr",
+        "service_pg4i0la",
+        "template_wlv85cd",
         e.target,
-        "user_vYmDSd9PwIuRXUQEDjYwN"
+        "ps1MGbPzj3-wEs6-8"
       )
       .then((res) => {
-        console.log(res);
+        console.log(res.text);
       })
       .catch((err) => {
         console.log(err);
@@ -42,19 +34,6 @@ const Contact = () => {
           </div>
         </div>
         {/* END TITLE */}
-
-        {/* <div className="map_wrap">
-          <div className="map">
-            <ReactMapGL
-              mapStyle={"mapbox://style/mapbox/dark-v9"}
-              mapboxApiAccessToken="pk.eyJ1IjoiYmF5YXppZGgiLCJhIjoiY2tvemdwc3ByMDg1YzJubzQxcDR0cDR3dyJ9.s1zXEb5OPqgBDcmupj3GBA"
-              {...viewport}
-              onViewportChange={(nextViewport) => setViewport(nextViewport)}
-            />
-          </div>
-        </div> */}
-        {/* MENU WRAP */}
-
         <div className="fields">
           <form className="contact_form" onSubmit={sendEmail}>
             <div className="first">
@@ -65,7 +44,7 @@ const Contact = () => {
                 {/* END FIRST NAME */}
 
                 <li>
-                  <input type="email" name="user_email" placeholder="Email" />
+                  <input type="email" name="email" placeholder="Email" />
                 </li>
                 {/* END EMAIL */}
 
