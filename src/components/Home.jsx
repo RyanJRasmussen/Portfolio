@@ -1,5 +1,6 @@
 import React from "react";
 import Social from "./Social";
+import headshot from "../assets/Headshot.jpeg";
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
             <div
               className="image avatar_img"
               style={{
-                backgroundImage: "url(assets/img/portfolio/Headshot.jpeg)",
+                backgroundImage: `url(${headshot})`,
               }}
             ></div>
             {/* END AVATAR IMAGE */}

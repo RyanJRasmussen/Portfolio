@@ -1,7 +1,7 @@
 {
-  "homepage": "http://RyanJRasmussen.github.io/Portfolio",
   "name": "portfolio",
   "version": "1.0.0",
+  "homepage": "https://RyanJRasmussen.github.io/Portfolio",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -32,6 +32,7 @@
     "slick-carousel": "^1.8.1",
     "web-vitals": "^1.0.1"
   },
+   
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

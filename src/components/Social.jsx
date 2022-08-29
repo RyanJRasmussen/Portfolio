@@ -1,17 +1,26 @@
 import React from "react";
 import Resume from "../assets/resume.pdf";
+import github from "../assets/svg/social/github.svg";
+import linkedin from "../assets/svg/social/linkedin.svg";
+import resume from "../assets/svg/social/resume.svg";
 
 const SocialShare = [
-  { iconName: "linkedin", link: "https://linkedin.com/in/ryan-j-rasmussen-" },
   {
-    iconName: "github",
-    link: "https://github.com/RyanJRasmussen",
+    icon: linkedin,
+    link: "https://linkedin.com/in/ryan-j-rasmussen-",
+    name: "LinkedIn",
   },
-  // { iconName: "mail", link: "https://ryan.james.rasmussen@gmail.com/" },
+  {
+    icon: github,
+    link: "https://github.com/RyanJRasmussen",
+    name: "GitHub",
+  },
+  // { icon: "mail", link: "https://ryan.james.rasmussen@gmail.com/" },
   //need to figure out "mailTo" later
   {
-    iconName: "resume",
+    icon: resume,
     link: Resume,
+    name: "Resume",
   },
 ];
 const Social = () => {
@@ -24,8 +33,8 @@ const Social = () => {
               <img
                 className="svg"
                 id="homeIcon"
-                src={`/assets/img/svg/social/${val.iconName}.svg`}
-                alt={val.iconName}
+                src={`${val.icon}`}
+                alt={val.name}
               ></img>
             </a>
           </li>

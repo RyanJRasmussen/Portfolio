@@ -6,6 +6,11 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Skills from "../components/Skills";
+import home from "../assets/svg/home-run.svg";
+import avatar from "../assets/svg/avatar.svg";
+import puzzle from "../assets/svg/skills.svg";
+import paper from "../assets/svg/paper.svg";
+import mail from "../assets/svg/mail.svg";
 
 const HomeLight = () => {
   const [isDark, setIsDark] = useState(false);
@@ -52,43 +57,23 @@ const HomeLight = () => {
               <div className="menu">
                 <ul>
                   <Tab>
-                    <img
-                      className="svg"
-                      src="/assets/img/svg/home-run.svg"
-                      alt="homerun"
-                    />
+                    <img className="svg" src={home} alt="homerun" />
                     <span className="menu_content">Home</span>
                   </Tab>
                   <Tab>
-                    <img
-                      className="svg"
-                      src="/assets/img/svg/avatar.svg"
-                      alt="avatar"
-                    />
+                    <img className="svg" src={avatar} alt="avatar" />
                     <span className="menu_content">About</span>
                   </Tab>
                   <Tab>
-                    <img
-                      className="svg"
-                      src="/assets/img/svg/skills.svg"
-                      alt="puzzle-piece"
-                    />
+                    <img className="svg" src={puzzle} alt="puzzle-piece" />
                     <span className="menu_content">Skills</span>
                   </Tab>
                   <Tab>
-                    <img
-                      className="svg"
-                      src="/assets/img/svg/paper.svg"
-                      alt="paper"
-                    />
+                    <img className="svg" src={paper} alt="paper" />
                     <span className="menu_content">Projects</span>
                   </Tab>
                   <Tab>
-                    <img
-                      className="svg"
-                      src="/assets/img/svg/mail.svg"
-                      alt="mail"
-                    />
+                    <img className="svg" src={mail} alt="mail" />
                     <span className="menu_content"> Contact</span>
                   </Tab>
                 </ul>
