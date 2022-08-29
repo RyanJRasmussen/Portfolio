@@ -40,6 +40,19 @@ svg {
   height: 15px;
 }
 
+#ContactForm {
+  padding-top: 75px;
+}
+
+#ResourceLink {
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+}
+#ResourceLink:hover {
+  color: red;
+}
+
 #skillIcon {
   padding: 5px;
   width: 50px;

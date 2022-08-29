@@ -15,8 +15,6 @@ const SocialShare = [
     link: "https://github.com/RyanJRasmussen",
     name: "GitHub",
   },
-  // { icon: "mail", link: "https://ryan.james.rasmussen@gmail.com/" },
-  //need to figure out "mailTo" later
   {
     icon: resume,
     link: Resume,

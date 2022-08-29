@@ -1,5 +1,7 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import Social from "./Social";
+import Email from "../assets/svg/mail.svg";
 
 const Contact = () => {
   function sendEmail(e) {
@@ -28,13 +30,15 @@ const Contact = () => {
         <div className="tokyo_tm_title">
           <div className="title_flex">
             <div className="left">
-              <span>Contact</span>
               <h3>Get in Touch</h3>
             </div>
           </div>
         </div>
+        <Social />
+        <br />
+        or send me a message below
         {/* END TITLE */}
-        <div className="fields">
+        <div className="fields" id="ContactForm">
           <form className="contact_form" onSubmit={sendEmail}>
             <div className="first">
               <ul>

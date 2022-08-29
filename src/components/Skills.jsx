@@ -1,5 +1,9 @@
 import React from "react";
-import SkillIcons from "./SkillIcons";
+import LanguageIcons from "./LanguageIcons";
+import FrameworkIcons from "./FrameworkIcons";
+import DatabaseIcons from "./DatabaseIcons";
+import OtherIcons from "./OtherIcons";
+// import SkillIcons from "./SkillIcons";
 const Skills = () => {
   return (
     <>
@@ -9,23 +13,30 @@ const Skills = () => {
             <h3 className="left">Skills</h3>
           </div>
         </div>
-        <SkillIcons />
+        {/* <SkillIcons /> */}
         <br />
         <p>
-          <span id="skillsSubtitle">Languages and tools: </span> HTML, CSS,
-          Javascript/Node.js, TypeScript, Python
+          <span id="skillsSubtitle">Languages and tools: </span>
+          <LanguageIcons />
+          HTML, CSS, Javascript/Node.js, Python
+          <br />
           <br />
           <br />
           <span id="skillsSubtitle">Frameworks: </span>
-          React.js, Express.js, Flask
+          <FrameworkIcons />
+          React.js, Redux.js, Express.js, Flask
+          <br />
           <br />
           <br />
           <span id="skillsSubtitle">Database: </span>
-          PostgreSQL, MySQL, Sequelize, Node Postgres, MongoDB, Mongoose ORM
+          <DatabaseIcons />
+          PostgreSQL, MongoDB
           <br />
           <br />
-          <span id="skillsSubtitle">Other tools: </span> Git, GitHub, Heroku,
-          REST APIs, Jest, VSCode, Jupyter Notebooks, Agile
+          <br />
+          <span id="skillsSubtitle">Other tools: </span>
+          <OtherIcons />
+          Git, GitHub, Heroku, REST APIs, VSCode
         </p>
       </div>
     </>

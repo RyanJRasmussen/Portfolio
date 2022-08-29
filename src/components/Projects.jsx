@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import Social from "./Social";
+import closeIcon from "../assets/svg/cancel.svg";
 
 Modal.setAppElement("#root");
 
@@ -77,7 +78,7 @@ const Projects = () => {
               >
                 <div className="tokyo_tm_modalbox_news">
                   <button className="close-modal" onClick={toggleModalOne}>
-                    <img src="assets/img/svg/cancel.svg" alt="close icon" />
+                    <img src={closeIcon} alt="close icon" />
                   </button>
                   {/* END CLOSE ICON */}
                   <div className="box_inner">
@@ -95,14 +96,8 @@ const Projects = () => {
                       </div> */}
                       {/* END IMAGE */}
                       <div className="details">
-                        {/* <div className="extra">
-                          <p className="date">
-                            By <a href="#">Alex Watson</a>
-                            <span>05 April 2021</span>
-                          </p>
-                        </div> */}
                         <h3 className="title">
-                          Live updating simulated sports betting application
+                          Live updating sports betting application
                         </h3>
                       </div>
                       {/* END DETAILS */}
@@ -110,7 +105,6 @@ const Projects = () => {
                         <div className="descriptions">
                           <h5>Summary</h5>
                           <p className="bigger">
-                            <br />
                             YouBetcha is a full stack sports betting web
                             application that allows users to make accounts and
                             place bets on real MLB games. Users are able to log
@@ -120,66 +114,115 @@ const Projects = () => {
                             successful.
                           </p>
                           <br />
+                          <h6>Technologies</h6>
+                          Authentication: Handled with{" "}
+                          <a href="https://auth0.com/" id="ResourceLink">
+                            Auth0
+                          </a>{" "}
                           <br />
-                          Technologies used: Authentication = Auth0 Front end:
-                          React.js PostgreSQL, Express.js, React.js, Node.js,
-                          Node Postgres ORM, The Odds API, Heroku, Heroku
-                          Scheduler, Material UI, GitHub/Git, Auth0, Trello
+                          Front end: Built in{" "}
+                          <a href="https://reactjs.org/" id="ResourceLink">
+                            React.js
+                          </a>
+                          , styled using{" "}
+                          <a href="https://mui.com/" id="ResourceLink">
+                            MaterialUI
+                          </a>
+                          <br />
+                          Back end: Built in{" "}
+                          <a href="https://nodejs.org/en/" id="ResourceLink">
+                            Node.js
+                          </a>
+                          , routing handled with{" "}
+                          <a href="https://expressjs.com/" id="ResourceLink">
+                            Express.js
+                          </a>
+                          <br />
+                          Database: Cloud{" "}
+                          <a
+                            href="https://www.postgresql.org/"
+                            id="ResourceLink"
+                          >
+                            PostgreSQL
+                          </a>{" "}
+                          database hosted on{" "}
+                          <a href="https://id.heroku.com/" id="ResourceLink">
+                            Heroku
+                          </a>
+                          <br />
+                          API: Data retrieved from{" "}
+                          <a href="https://the-odds-api.com/" id="ResourceLink">
+                            The Odds API
+                          </a>
+                          <br />
+                          SQL: Data manipulated using the{" "}
+                          <a
+                            href="https://node-postgres.com/"
+                            id="ResourceLink"
+                          >
+                            Node Postgres ORM
+                          </a>
+                          <br />
+                          Scheduler: Scheduled API calls are made from the back
+                          end using{" "}
+                          <a
+                            href="https://devcenter.heroku.com/articles/scheduler"
+                            id="ResourceLink"
+                          >
+                            Heroku Scheduler
+                          </a>
+                          <br />
+                          Project Management:{" "}
+                          <a href="https://trello.com/home" id="ResourceLink">
+                            Trello
+                          </a>
+                          <br />
+                          Version control:{" "}
+                          <a href="https://github.com/" id="ResourceLink">
+                            GitHub
+                          </a>
+                          <br />
+                          <br />
+                          <br />
+                          <h6>Problems solved</h6>
                           <p>
-                            Most photographers love to shoot the unusual, and
-                            you don’t get much more unusual than These
-                            Unprecedented Times. Right now everything counts as
-                            out of the ordinary. There are a number of
-                            remarkable things about these lockdown days that are
-                            worth photographing now so we can remember them when
-                            it is all over.
+                            My primary role in this project was on the back end,
+                            though I also contributed to the front end. <br />I
+                            was responsible for the database in its entirety,
+                            setting it up as a Heroku Postgres database. I chose
+                            Node Postgres as the ORM, and integrated it into the
+                            back end to write SQL queries for database
+                            manipulation. I wrote all routes that retreived and
+                            dealt with data from The Odds API, as well as routes
+                            that moved that data into our database. I wrote
+                            routes to create bets and update user funds
+                            according to bet results, and set up Heroku
+                            Scheduler to carry out game and bet updating POST
+                            and PUT requests multiple times a day.
+                            <br />
+                            On the front end I created and styled the card and
+                            modals with MaterialUI. I also added Auth0 to the
+                            application.
                           </p>
-                          <p>
-                            Streets empty that are usually busy are remarkable
-                            and can evoke the sense of historical pictures from
-                            before the invention of the motorcar. Other things
-                            that are different at the moment will be queues to
-                            get into stores and the lines marked out on the
-                            floor to show how far apart we should be.
-                          </p>
-                          <div className="quotebox">
-                            <div className="icon">
-                              <img
-                                className="svg"
-                                src="assets/img/svg/quote.svg"
-                                alt="tumb"
-                              />
-                            </div>
-                            <p>
-                              Most photographers find it hard to see interesting
-                              pictures in places in which they are most
-                              familiar. A trip somewhere new seems always
-                              exactly what our photography needed, as shooting
-                              away from home consistently inspires us to new
-                              artistic heights.
-                            </p>
-                          </div>
+                          Repositories:{" "}
+                          <a
+                            href="https://github.com/prashantkumar1113/milestone3-express"
+                            id="ResourceLink"
+                          >
+                            Back End
+                          </a>
+                          ,{" "}
+                          <a
+                            href="https://github.com/wjtelliott/PERN-3-Front"
+                            id="ResourceLink"
+                          >
+                            Front End
+                          </a>
                           {/* END QUOTEBOX */}
-                          <p>
-                            Pretend everything is new and that you haven’t seen
-                            it before, and then you will be free to notice the
-                            leading lines, the places where one edge meets
-                            another in delightful geometric harmony, and how the
-                            ordinary things in the kitchen are transformed when
-                            the light is on or off.
-                          </p>
-                          <p>
-                            The trick here is to look slowly, and then look
-                            again. Take the time to look in detail and to look
-                            at the same thing from different angles, with
-                            different light, long lenses and wide lenses. Then
-                            move to the left a bit. You may never feel the need
-                            to leave the house again.
-                          </p>
                         </div>
                         {/* END DESCRIPTION */}
                         <div className="news_share">
-                          <span>Share:</span>
+                          <span>Social:</span>
                           <Social />
                           {/* END SOCIAL SHARE */}
                         </div>
@@ -241,105 +284,128 @@ const Projects = () => {
               >
                 <div className="tokyo_tm_modalbox_news">
                   <button className="close-modal" onClick={toggleModalTwo}>
-                    <img src="assets/img/svg/cancel.svg" alt="close icon" />
+                    <img src={closeIcon} alt="close icon" />
                   </button>
                   {/* END CLOSE MODAL */}
                   <div className="box_inner">
                     <div className="description_wrap scrollable">
-                      <div className="image">
-                        <img src="assets/img/thumbs/4-3.jpg" alt="thumb" />
+                      <h3 className="title">Huddle </h3>
+                      {/* <div className="image">
+                        <img src="assets/img/thumbs/4-3.jpg" alt="tumb" />
                         <div
                           className="main"
                           style={{
                             backgroundImage:
-                              "url(assets/img/news/huddleScreenshot.png)",
+                              "url(assets/img/news/youbetchaScreenshot.png)",
                           }}
                         ></div>
-                      </div>
+                      </div> */}
                       {/* END IMAGE */}
                       <div className="details">
-                        <div className="extra">
-                          <p className="date">
-                            By <a href="#">Brook Kennedy</a>
-                            <span>22 March 2021</span>
-                          </p>
-                        </div>
-                        <h3 className="title">
-                          Sony announced two new full frame cameras with zero
-                          fanfare
-                        </h3>
+                        <h3 className="title">NFL Player Guessing Game</h3>
                       </div>
                       {/* END DETAILS */}
                       <div className="main_content ">
                         <div className="descriptions">
+                          <h5>Summary</h5>
                           <p className="bigger">
-                            Just because we can't get out and about like we
-                            normally would, doesn’t mean we have to stop taking
-                            pictures. There’s still plenty you can do, provided
-                            you're prepared to use some imagination. Here are a
-                            few ideas to keep you shooting until normal life
-                            resumes.
+                            Huddle is a wordle-inspired guessing game where
+                            players guess a player and receive feeback for their
+                            guess. Players receive information about each player
+                            they guess, including conference and division, team,
+                            position, draft team, draft year, pro bowls, and
+                            rings won over their career. Players receive hints
+                            in the form of colored tiles, much like how letters
+                            in wordle are colored according to
+                            correctness/closeness. For a more detailed
+                            explanation of the rules, see the rules modal on the
+                            website. Please feel free to play the game and try
+                            to guess the player!
+                            <br />
+                            Huddle is a front end application with no back end
+                            at this time. Data is currently static, and not
+                            large enough to slow down the application, so it is
+                            stored on the front end. There is no
+                            authentication/user profiles that a back end would
+                            need to shuttle the data to and from a database.
+                            Instead, user specific data is stored on Local
+                            Storage.
                           </p>
+                          <br />
+                          <h6>Technologies</h6>
+                          Front end: Built in{" "}
+                          <a href="https://reactjs.org/" id="ResourceLink">
+                            React.js
+                          </a>
+                          , styled using{" "}
+                          <a
+                            href="https://react-bootstrap.github.io/"
+                            id="ResourceLink"
+                          >
+                            React-Bootstrap
+                          </a>
+                          <br />
+                          Hosted on:{" "}
+                          <a href="https://id.heroku.com/" id="ResourceLink">
+                            Heroku
+                          </a>
+                          <br />
+                          API: Player data retrieved from{" "}
+                          <a href="https://sportsdata.io/" id="ResourceLink">
+                            SportsDataIO
+                          </a>
+                          <br />
+                          Project Management:{" "}
+                          <a href="https://trello.com/home" id="ResourceLink">
+                            Trello
+                          </a>
+                          <br />
+                          Version control:{" "}
+                          <a href="https://github.com/" id="ResourceLink">
+                            GitHub
+                          </a>
+                          <br />
+                          <br />
+                          <br />
+                          <h6>Problems solved</h6>
                           <p>
-                            Most photographers love to shoot the unusual, and
-                            you don’t get much more unusual than These
-                            Unprecedented Times. Right now everything counts as
-                            out of the ordinary. There are a number of
-                            remarkable things about these lockdown days that are
-                            worth photographing now so we can remember them when
-                            it is all over.
+                            This project was done alongside a partner, and
+                            responsibilities were split evenly. As this project
+                            has no back end, this project was an excercise in
+                            styling, designing, and creating an intuitive user
+                            experience on the front end. I created and iterated
+                            on the main table that the user receives feedback
+                            from, while also creating the modals that the user
+                            can use to check the game rules, view their data, or
+                            see player pool info. This project was coded in
+                            React Class Components, rather than React Functional
+                            Components, providing valuable experience with
+                            object-oriented design.
                           </p>
-                          <p>
-                            Streets empty that are usually busy are remarkable
-                            and can evoke the sense of historical pictures from
-                            before the invention of the motorcar. Other things
-                            that are different at the moment will be queues to
-                            get into stores and the lines marked out on the
-                            floor to show how far apart we should be.
-                          </p>
-                          <div className="quotebox">
-                            <div className="icon">
-                              <img
-                                className="svg"
-                                src="assets/img/svg/quote.svg"
-                                alt="quote"
-                              />
-                            </div>
-                            <p>
-                              Most photographers find it hard to see interesting
-                              pictures in places in which they are most
-                              familiar. A trip somewhere new seems always
-                              exactly what our photography needed, as shooting
-                              away from home consistently inspires us to new
-                              artistic heights.
-                            </p>
-                          </div>
+                          <br />
+                          <a
+                            href="https://github.com/mjbuchman/huddle"
+                            id="ResourceLink"
+                          >
+                            Click here for the code
+                          </a>
+                          <br />
+                          <a
+                            href="https://www.huddlegame.com/"
+                            id="ResourceLink"
+                          >
+                            Click here to play Huddle!
+                          </a>
                           {/* END QUOTEBOX */}
-                          <p>
-                            Pretend everything is new and that you haven’t seen
-                            it before, and then you will be free to notice the
-                            leading lines, the places where one edge meets
-                            another in delightful geometric harmony, and how the
-                            ordinary things in the kitchen are transformed when
-                            the light is on or off.
-                          </p>
-                          <p>
-                            The trick here is to look slowly, and then look
-                            again. Take the time to look in detail and to look
-                            at the same thing from different angles, with
-                            different light, long lenses and wide lenses. Then
-                            move to the left a bit. You may never feel the need
-                            to leave the house again.
-                          </p>
                         </div>
+                        {/* END DESCRIPTION */}
                         <div className="news_share">
-                          <span>Share:</span>
+                          <span>Social:</span>
                           <Social />
-                          {/* END SOCIAL */}
+                          {/* END SOCIAL SHARE */}
                         </div>
                         {/* END NEWS SHARE */}
                       </div>
-                      {/* END MAIN CONTENT */}
                     </div>
                   </div>
                 </div>
@@ -396,100 +462,108 @@ const Projects = () => {
               >
                 <div className="tokyo_tm_modalbox_news">
                   <button className="close-modal" onClick={toggleModalThree}>
-                    <img src="assets/img/svg/cancel.svg" alt="close icon" />
+                    <img src={closeIcon} alt="close icon" />
                   </button>
                   <div className="box_inner">
                     <div className="description_wrap scrollable">
-                      <div className="image">
-                        <img src="assets/img/thumbs/4-3.jpg" alt="thumb" />
+                      <h3 className="title">Huddle </h3>
+                      {/* <div className="image">
+                        <img src="assets/img/thumbs/4-3.jpg" alt="tumb" />
                         <div
                           className="main"
                           style={{
                             backgroundImage:
-                              "url(assets/img/news/checkersScreenshot.png)",
+                              "url(assets/img/news/youbetchaScreenshot.png)",
                           }}
                         ></div>
-                      </div>
+                      </div> */}
+                      {/* END IMAGE */}
                       <div className="details">
-                        <div className="extra">
-                          <p className="date">
-                            By <a href="#">Paola Atkins</a>
-                            <span>15 Feb 2021</span>
-                          </p>
-                        </div>
-                        <h3 className="title">
-                          Why every photographer should shoot film, even in 2021
-                        </h3>
+                        <h3 className="title">NFL Player Guessing Game</h3>
                       </div>
+                      {/* END DETAILS */}
                       <div className="main_content ">
                         <div className="descriptions">
+                          <h5>Summary</h5>
                           <p className="bigger">
-                            Just because we can't get out and about like we
-                            normally would, doesn’t mean we have to stop taking
-                            pictures. There’s still plenty you can do, provided
-                            you're prepared to use some imagination. Here are a
-                            few ideas to keep you shooting until normal life
-                            resumes.
+                            This is checkers as you know and love, with black
+                            and red pieces, diagonal movement, and pawn-to-king
+                            promotion. This project was my first attempt at
+                            programming a game. It is built in vanilla
+                            JavaScript, HTML, and CSS, and does not use any
+                            libraries or frameworks. It is a single screen,
+                            multiplayer game, though I plan on eventually adding
+                            a simple AI to play one of the colors against a
+                            human user.
                           </p>
+                          <br />
+                          <h6>Technologies</h6>
+                          Built in:{" "}
+                          <a
+                            href="https://www.javascript.com/"
+                            id="ResourceLink"
+                          >
+                            JavaScript
+                          </a>
+                          ,{" "}
+                          <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                            id="ResourceLink"
+                          >
+                            CSS
+                          </a>
+                          , and{" "}
+                          <a
+                            href="https://www.w3schools.com/html/"
+                            id="ResourceLink"
+                          >
+                            HTML
+                          </a>
+                          <br />
+                          <br />
+                          <br />
+                          <h6>Problems solved</h6>
                           <p>
-                            Most photographers love to shoot the unusual, and
-                            you don’t get much more unusual than These
-                            Unprecedented Times. Right now everything counts as
-                            out of the ordinary. There are a number of
-                            remarkable things about these lockdown days that are
-                            worth photographing now so we can remember them when
-                            it is all over.
+                            Checkers was an excellent exercise in DOM
+                            manipulation. Among the main challenges was creating
+                            a drag and drop UI, which was accomplished using{" "}
+                            <a
+                              href="https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API"
+                              id="ResourceLink"
+                            >
+                              this
+                            </a>{" "}
+                            HTML drag and drop API. Once I had created a simple
+                            board and pieces with CSS, and was able to move them
+                            around with the drag and drop UI, the remaining
+                            challenge was tracking piece location, comparing
+                            pieces to other pieces, and either allowing or
+                            stopping piece capture depending on those locations.
+                            Eventually I accomplished this by comparing the
+                            piece to a two-dimensional array of square IDs, in
+                            effect creating a coordinate system to ensure move
+                            legality. This application will be worked on in the
+                            future to add responsive board/piece sizes, and
+                            single player mode.
                           </p>
-                          <p>
-                            Streets empty that are usually busy are remarkable
-                            and can evoke the sense of historical pictures from
-                            before the invention of the motorcar. Other things
-                            that are different at the moment will be queues to
-                            get into stores and the lines marked out on the
-                            floor to show how far apart we should be.
-                          </p>
-                          <div className="quotebox">
-                            <div className="icon">
-                              <img
-                                className="svg"
-                                src="assets/img/svg/quote.svg"
-                                alt="quore"
-                              />
-                            </div>
-                            <p>
-                              Most photographers find it hard to see interesting
-                              pictures in places in which they are most
-                              familiar. A trip somewhere new seems always
-                              exactly what our photography needed, as shooting
-                              away from home consistently inspires us to new
-                              artistic heights.
-                            </p>
-                          </div>
+                          <br />
+                          <a
+                            href="https://github.com/RyanJRasmussen/Checkers"
+                            id="ResourceLink"
+                          >
+                            Click here for the code
+                          </a>
+                          <br />
                           {/* END QUOTEBOX */}
-                          <p>
-                            Pretend everything is new and that you haven’t seen
-                            it before, and then you will be free to notice the
-                            leading lines, the places where one edge meets
-                            another in delightful geometric harmony, and how the
-                            ordinary things in the kitchen are transformed when
-                            the light is on or off.
-                          </p>
-                          <p>
-                            The trick here is to look slowly, and then look
-                            again. Take the time to look in detail and to look
-                            at the same thing from different angles, with
-                            different light, long lenses and wide lenses. Then
-                            move to the left a bit. You may never feel the need
-                            to leave the house again.
-                          </p>
                         </div>
+                        {/* END DESCRIPTION */}
                         <div className="news_share">
-                          <span>Share:</span>
+                          <span>Social:</span>
                           <Social />
-                          {/* END SCCIAL SHARE */}
+                          {/* END SOCIAL SHARE */}
                         </div>
+                        {/* END NEWS SHARE */}
                       </div>
-                      {/* END MAIN CONTENT */}
                     </div>
                   </div>
                 </div>
