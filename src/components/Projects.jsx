@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import Social from "./Social";
 import closeIcon from "../assets/svg/cancel.svg";
+import huddleImage from "../assets/news/huddleScreenshot.png";
 
 Modal.setAppElement("#root");
 
@@ -249,8 +250,7 @@ const Projects = () => {
                 <div
                   className="main"
                   style={{
-                    backgroundImage:
-                      "url(assets/img/news/huddleScreenshot.png)",
+                    backgroundImage: `url(${huddleImage})`,
                   }}
                 ></div>
               </div>
