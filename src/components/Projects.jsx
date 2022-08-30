@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import Social from "./Social";
 import closeIcon from "../assets/svg/cancel.svg";
-import huddleImage from "../assets/news/huddleScreenshot.png";
+import thumb from "../assets/thumbs/4-3.jpg";
+import huddleScreenshot from "../assets/news/huddleScreenshot.png";
+import youbetchaScreenshot from "../assets/news/youbetchaScreenshot.png";
+import checkersScreenshot from "../assets/news/checkersScreenshot.png";
+
 
 Modal.setAppElement("#root");
 
@@ -41,12 +45,11 @@ const Projects = () => {
           <li data-aos="fade-right" data-aos-duration="1200">
             <div className="list_inner">
               <div className="image" onClick={toggleModalOne}>
-                <img src="assets/img/thumbs/4-3.jpg" alt="thumb" />
+                <img src={thumb} alt="thumb" />
                 <div
                   className="main"
                   style={{
-                    backgroundImage:
-                      "url(assets/img/news/youbetchaScreenshot.png)",
+                    backgroundImage: `url(${youbetchaScreenshot})`,
                   }}
                 ></div>
               </div>
@@ -246,11 +249,12 @@ const Projects = () => {
           >
             <div className="list_inner">
               <div className="image" onClick={toggleModalTwo}>
-                <img src="assets/img/thumbs/4-3.jpg" alt="thumb" />
+                <img src={thumb} alt="thumb" />
                 <div
                   className="main"
                   style={{
-                    backgroundImage: `url(${huddleImage})`,
+                    backgroundImage: `url(${huddleScreenshot})`,
+
                   }}
                 ></div>
               </div>
@@ -258,7 +262,7 @@ const Projects = () => {
 
               <div className="details">
                 <div className="extra">
-                  <h3 className="title" onClick={toggleModalOne}>
+                  <h3 className="title" onClick={toggleModalTwo}>
                     Huddle
                   </h3>
                 </div>
@@ -267,7 +271,7 @@ const Projects = () => {
                   NFL player guessing game inspired by Wordle
                 </p>
                 <div className="tokyo_tm_read_more">
-                  <a onClick={toggleModalOne}>
+                  <a onClick={toggleModalTwo}>
                     <span>Read More</span>
                   </a>
                 </div>
@@ -423,12 +427,11 @@ const Projects = () => {
           >
             <div className="list_inner">
               <div className="image" onClick={toggleModalThree}>
-                <img src="assets/img/thumbs/4-3.jpg" alt="thumb" />
+                <img src={thumb} alt="thumb" />
                 <div
                   className="main"
                   style={{
-                    backgroundImage:
-                      "url(assets/img/news/checkersScreenshot.png)",
+                    backgroundImage: `url(${checkersScreenshot})`,
                   }}
                 ></div>
               </div>
@@ -436,14 +439,14 @@ const Projects = () => {
 
               <div className="details">
                 <div className="extra">
-                  <h3 className="title" onClick={toggleModalOne}>
+                  <h3 className="title" onClick={toggleModalThree}>
                     Checkers
                   </h3>
                 </div>
                 {/* END EXTRA */}
                 <p className="date">The classic two player game</p>
                 <div className="tokyo_tm_read_more">
-                  <a onClick={toggleModalOne}>
+                  <a onClick={toggleModalThree}>
                     <span>Read More</span>
                   </a>
                 </div>
@@ -466,7 +469,7 @@ const Projects = () => {
                   </button>
                   <div className="box_inner">
                     <div className="description_wrap scrollable">
-                      <h3 className="title">Huddle </h3>
+                      <h3 className="title">Checkers </h3>
                       {/* <div className="image">
                         <img src="assets/img/thumbs/4-3.jpg" alt="tumb" />
                         <div
@@ -479,7 +482,7 @@ const Projects = () => {
                       </div> */}
                       {/* END IMAGE */}
                       <div className="details">
-                        <h3 className="title">NFL Player Guessing Game</h3>
+                        <h3 className="title">The classic board game</h3>
                       </div>
                       {/* END DETAILS */}
                       <div className="main_content ">
