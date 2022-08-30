@@ -486,8 +486,8 @@ const Projects = () => {
                         <div className="descriptions">
                           <h5>Summary</h5>
                           <p className="bigger">
-                            This is checkers as you know and love, with black
-                            and red pieces, diagonal movement, and pawn-to-king
+                            This is checkers as you know it, with black and red
+                            pieces, diagonal movement, and pawn-to-king
                             promotion. This project was my first attempt at
                             programming a game. It is built in vanilla
                             JavaScript, HTML, and CSS, and does not use any
