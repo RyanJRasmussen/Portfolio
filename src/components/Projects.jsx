@@ -258,7 +258,7 @@ const Projects = () => {
 
               <div className="details">
                 <div className="extra">
-                  <h3 className="title" onClick={toggleModalOne}>
+                  <h3 className="title" onClick={toggleModalTwo}>
                     Huddle
                   </h3>
                 </div>
@@ -267,7 +267,7 @@ const Projects = () => {
                   NFL player guessing game inspired by Wordle
                 </p>
                 <div className="tokyo_tm_read_more">
-                  <a onClick={toggleModalOne}>
+                  <a onClick={toggleModalTwo}>
                     <span>Read More</span>
                   </a>
                 </div>
@@ -436,14 +436,14 @@ const Projects = () => {
 
               <div className="details">
                 <div className="extra">
-                  <h3 className="title" onClick={toggleModalOne}>
+                  <h3 className="title" onClick={toggleModalThree}>
                     Checkers
                   </h3>
                 </div>
                 {/* END EXTRA */}
                 <p className="date">The classic two player game</p>
                 <div className="tokyo_tm_read_more">
-                  <a onClick={toggleModalOne}>
+                  <a onClick={toggleModalThree}>
                     <span>Read More</span>
                   </a>
                 </div>
@@ -466,7 +466,7 @@ const Projects = () => {
                   </button>
                   <div className="box_inner">
                     <div className="description_wrap scrollable">
-                      <h3 className="title">Huddle </h3>
+                      <h3 className="title">Checkers </h3>
                       {/* <div className="image">
                         <img src="assets/img/thumbs/4-3.jpg" alt="tumb" />
                         <div
@@ -479,7 +479,7 @@ const Projects = () => {
                       </div> */}
                       {/* END IMAGE */}
                       <div className="details">
-                        <h3 className="title">NFL Player Guessing Game</h3>
+                        <h3 className="title">The classic board game</h3>
                       </div>
                       {/* END DETAILS */}
                       <div className="main_content ">
