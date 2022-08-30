@@ -7,6 +7,7 @@ import huddleScreenshot from "../assets/news/huddleScreenshot.png";
 import youbetchaScreenshot from "../assets/news/youbetchaScreenshot.png";
 import checkersScreenshot from "../assets/news/checkersScreenshot.png";
 
+
 Modal.setAppElement("#root");
 
 const Projects = () => {
@@ -253,6 +254,7 @@ const Projects = () => {
                   className="main"
                   style={{
                     backgroundImage: `url(${huddleScreenshot})`,
+
                   }}
                 ></div>
               </div>
