@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import Social from "./Social";
 import closeIcon from "../assets/svg/cancel.svg";
+import thumb from "../assets/thumbs/4-3.jpg";
+import huddleScreenshot from "../assets/news/huddleScreenshot.png";
+import youbetchaScreenshot from "../assets/news/youbetchaScreenshot.png";
+import checkersScreenshot from "../assets/news/checkersScreenshot.png";
 
 Modal.setAppElement("#root");
 
@@ -40,12 +44,11 @@ const Projects = () => {
           <li data-aos="fade-right" data-aos-duration="1200">
             <div className="list_inner">
               <div className="image" onClick={toggleModalOne}>
-                <img src="assets/img/thumbs/4-3.jpg" alt="thumb" />
+                <img src={thumb} alt="thumb" />
                 <div
                   className="main"
                   style={{
-                    backgroundImage:
-                      "url(assets/img/news/youbetchaScreenshot.png)",
+                    backgroundImage: `url(${youbetchaScreenshot})`,
                   }}
                 ></div>
               </div>
@@ -245,12 +248,11 @@ const Projects = () => {
           >
             <div className="list_inner">
               <div className="image" onClick={toggleModalTwo}>
-                <img src="assets/img/thumbs/4-3.jpg" alt="thumb" />
+                <img src={thumb} alt="thumb" />
                 <div
                   className="main"
                   style={{
-                    backgroundImage:
-                      "url(assets/img/news/huddleScreenshot.png)",
+                    backgroundImage: `url(${huddleScreenshot})`,
                   }}
                 ></div>
               </div>
@@ -423,12 +425,11 @@ const Projects = () => {
           >
             <div className="list_inner">
               <div className="image" onClick={toggleModalThree}>
-                <img src="assets/img/thumbs/4-3.jpg" alt="thumb" />
+                <img src={thumb} alt="thumb" />
                 <div
                   className="main"
                   style={{
-                    backgroundImage:
-                      "url(assets/img/news/checkersScreenshot.png)",
+                    backgroundImage: `url(${checkersScreenshot})`,
                   }}
                 ></div>
               </div>
