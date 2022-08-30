@@ -14,4 +14,3 @@
 //     </Link>
 //   );
 // }
-//use like this => <ButtonMailto label="Send me a message" mailto="ryan.james.rasmussen@gmail.com" />
