@@ -16,25 +16,25 @@ const Skills = () => {
         {/* <SkillIcons /> */}
         <br />
         <p>
-          <span id="skillsSubtitle">Languages and tools: </span>
+          {/* <span id="skillsSubtitle">Languages and tools: </span> */}
           <LanguageIcons />
           HTML, CSS, Javascript/Node.js, Python
           <br />
           <br />
           <br />
-          <span id="skillsSubtitle">Frameworks: </span>
+          {/* <span id="skillsSubtitle">Frameworks: </span> */}
           <FrameworkIcons />
           React.js, Redux.js, Express.js, Flask
           <br />
           <br />
           <br />
-          <span id="skillsSubtitle">Database: </span>
+          {/* <span id="skillsSubtitle">Database: </span> */}
           <DatabaseIcons />
           PostgreSQL, MongoDB
           <br />
           <br />
           <br />
-          <span id="skillsSubtitle">Other tools: </span>
+          {/* <span id="skillsSubtitle">Other tools: </span> */}
           <OtherIcons />
           Git, GitHub, Heroku, REST APIs, VSCode
         </p>

@@ -5,7 +5,7 @@ import react from "../assets/svg/skills/react.svg";
 import redux from "../assets/svg/skills/redux.svg";
 
 const SkillShare = [
-  { icon: react, name: "react" },
+  { icon: react, name: "React.js" },
   { icon: redux, name: "redux" },
   { icon: express, name: "express" },
 ];

@@ -4,8 +4,8 @@ import postgres from "../assets/svg/skills/postgres.svg";
 import mongodb from "../assets/svg/skills/mongodb.svg";
 
 const SkillShare = [
-  { icon: postgres, name: "postgres" },
-  { icon: mongodb, name: "mongodb" },
+  { icon: postgres, name: "PostgreSQL" },
+  { icon: mongodb, name: "MongoDB" },
 ];
 
 const DatabaseIcons = () => {
